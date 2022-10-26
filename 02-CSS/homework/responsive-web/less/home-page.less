@@ -4,6 +4,11 @@
 
   .intro {
 
+    .banner{
+      .gonorrea();
+      width: 100%;
+    }
+
     h2 {
       padding: 15px;
     }
@@ -25,6 +30,14 @@
       border-radius: 20px;
       height: 100%;
     }
+    @media(max-width:@phone){
+      .tecnologia, .ondas{
+        display:none !important;
+        }
+        .auricular{
+          width: 100%;
+        }
+    }
   }
 
   .musica-nueva {
@@ -45,7 +58,6 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
     .actual-text {
       width: 50%;
 
@@ -58,6 +70,14 @@
       }
 
       .btn {
+        .botoncito-picicioso-uwu(@btn-bg-color,fit-content);
+        &:hover{
+          background-color: @porcelain;
+          color: @btn-bg-color;
+        }
+        cursor: pointer;
+        transition: 
+        background-color 0.5s, color 0.5s;
       }
     }
 
@@ -70,6 +90,27 @@
         height: auto;
         border-radius: 10px;
       }
+    }
+    @media(max-width:500px){
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        .actual-img{
+          width: 95%;
+          margin: 0%;
+          margin: 10px 10px;
+      }
+      .actual-text{
+        width: 100%;
+        .btn{
+          width: 96%;
+          margin: 14px 5px 14px 11px;
+          padding: 20px 20px;
+          text-align: center;
+
+        }
+      }
+      padding: 0%;
     }
   }
 }

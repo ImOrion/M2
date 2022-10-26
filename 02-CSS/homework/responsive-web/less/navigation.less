@@ -1,1 +1,37 @@
-// Código de Nav acá
+.Cabeza {
+  background-color: @nav-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .Titulo {
+    font-size: 3.2rem;
+    font-family: "Russo One", sans-serif;
+    color: #23293b;
+    padding-top: 20px;
+  }
+
+  nav {
+    color: @nav-font;
+    border-color: @nav-border;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 20px;
+
+    div {
+      cursor: pointer;
+      transition: background-color 2s, color 2s;
+      padding: 4px 4px;
+      border-radius: 7px;
+      user-select: none;
+    }
+    div:hover {
+      background-color: @river-bend;
+      color: @sea-shell;
+    }
+  }
+}
